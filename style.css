@@ -1,6 +1,6 @@
 :root{
  --primary-txt-color: #fff;
- --primary-bg-color:#2e2258;
+ --primary-bg-color:#463486;
 }
 *{
     box-sizing: border-box;
@@ -21,26 +21,31 @@ header{
     display: block;
     height: 100vh;
     width: 100vw;
+    padding-top: 10px;
 }
 
 header::before{
     content: '';
     position: absolute;
     inset: 0;
-    opacity: 0.2;
+    opacity: 0.1;
     background-image: url('./images/landing.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 .nav{
-    position: relative;
+  
     display: flex;
+     margin: 0 auto;
     height: 60px;
-    width: 100%;
+    width: 45rem;
+    border: 2px solid black;
+    border-left:150px solid transparent;
+    border-right:150px solid transparent;
     align-items: center;
-    justify-content: space-around;
-    padding: 0 1rem;
+    justify-content: space-evenly;
+ 
 }
 .hamburger-menu{
     display: none;
@@ -50,8 +55,8 @@ header::before{
 .nav-link-desktop>li{
     position: relative;
     display: inline;
-    padding-right: .6rem;
-    text-transform: uppercase;
+    padding-right: 1rem;
+    text-transform: capitalize;
     color: #fff;
     font-size: 24px;
 }
@@ -59,24 +64,38 @@ header::before{
 
 
 .logo{
+    display: none;
     display: flex;
     justify-content: space-between;
-    padding-right:  2rem;
-    align-items: center;
 }
+.logo>img{
+  
+    height: 4rem;
+    padding: 1rem;
 
+}
 
 .hero{
+  
     display: flex;
-    padding: 0 8rem ;
     height: 100%;
     align-items: center;
+    width: 100%;
+   justify-content: space-around;
     
 }
-
-.righ-side{
-    color: #fff;
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
 }
+
+.right-side{
+    padding: 0 4rem ;
+    z-index: 1;
+   
+}
+
 
 .hero button{
     border-radius: .5rem;
@@ -92,12 +111,62 @@ header::before{
 }
 
 .hero button:hover{
-    -webkit-box-shadow: -11px 0px 17px 12px #000000; 
-    box-shadow: -11px 0px 17px 12px #000000;
+    -webkit-box-shadow: -2px -5px 8px -5px #000000; 
+      box-shadow: -2px -5px 8px -5px #000000;
 }
 hr{
     width: 50%;
     margin: 1rem 0;
+}
+
+.left-side{
+       top: -10px;
+      position: absolute;
+      animation: bounce 10s  infinite ;
+  
+}
+.rotor{
+    position: absolute;
+    top: 0;
+    width: 6.5rem;
+    height: .7rem;
+    background-color: #fff;
+    border-radius: .5rem;
+    animation: rotor 5ms infinite;
+}
+
+.rotor1{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+@keyframes rotor{
+    0%{
+       transform: rotateX(0deg);
+    }
+    50%{
+        transform: rotateX(45deg);
+    }
+    75%{
+        transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(180deg);
+    }
+}
+
+
+@keyframes bounce{
+     0%{
+        transform: translateY(0);
+     }
+     50%{
+        transform: translateY(-5%);
+     }
+     100%{
+        transform: translateY(0);
+     }
 }
 
 @media (max-width: 500px) {
