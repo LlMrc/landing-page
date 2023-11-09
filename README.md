@@ -58,5 +58,4 @@ If you'd like to contribute to this project, please follow the [Contributing Gui
 
 Thank you for using my landing page template! If you have any questions or feedback, feel free to [contact us](mailto:llouismrc2@gmail.com).
 
-
-![02page](https://github.com/LlMrc/landing-page/assets/90993312/d7148bff-c19f-4f5e-9b1a-5b3f5e922f17)
+[cap.webm](https://github.com/LlMrc/landing-page/assets/90993312/8a569745-af49-4502-857e-58704d658cee)
