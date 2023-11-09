@@ -18,7 +18,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 2. 
   ```bash
-   [git clone https://github.com/yourusername/your-landing-page.git](https://github.com/LlMrc/landing-page.git)
+   git clone https://github.com/LlMrc/landing-page.git
  ```
 
 2. Navigate to the project directory:
