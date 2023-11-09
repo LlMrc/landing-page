@@ -16,10 +16,10 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-
-   ```bash
-  https://github.com/LlMrc/landing-page.git
-   ```
+2. 
+  ```bash
+   git clone https://github.com/yourusername/your-landing-page.git
+ ```
 
 2. Navigate to the project directory:
 
